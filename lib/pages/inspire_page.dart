@@ -34,19 +34,22 @@ class InspirePage extends StatelessWidget {
             ),
 
             //page description text
-            SizedBox(
-              width: 350,
-              height: 72,
-              child: Text(
-                'Here are some successful posts from this week made by creators on the COCO App',
-                softWrap: true,
-                maxLines: 3,
-                overflow: TextOverflow.ellipsis,
-                style: GoogleFonts.poppins(
-                  textStyle: const TextStyle(
-                    color: Color.fromARGB(255, 139, 179, 136),
-                    fontSize: 18,
-                    fontWeight: FontWeight.w400,
+            Padding(
+              padding: const EdgeInsets.only(top: 10),
+              child: SizedBox(
+                width: 350,
+                height: 72,
+                child: Text(
+                  'Here are some successful posts from this week made by creators on the COCO App',
+                  softWrap: true,
+                  maxLines: 3,
+                  overflow: TextOverflow.ellipsis,
+                  style: GoogleFonts.poppins(
+                    textStyle: const TextStyle(
+                      color: Color.fromARGB(255, 139, 179, 136),
+                      fontSize: 18,
+                      fontWeight: FontWeight.w400,
+                    ),
                   ),
                 ),
               ),
@@ -54,7 +57,7 @@ class InspirePage extends StatelessWidget {
 
             //instagram posts area
             Padding(
-              padding: const EdgeInsets.only(top: 25),
+              padding: const EdgeInsets.only(top: 30, bottom: 10),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -72,38 +75,41 @@ class InspirePage extends StatelessWidget {
                   ),
 
                   //the posts
-                  SizedBox(
-                    height: 180,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Image.asset(
-                          'images/inspo-insta-post-1.png',
-                          width: 105,
-                          height: 150,
-                          errorBuilder: (context, error, stackTrace) {
-                            return const Text('Image failed to load');
-                          },
-                        ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 10),
+                    child: SizedBox(
+                      height: 180,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Image.asset(
+                            'images/inspo-insta-post-1.png',
+                            width: 105,
+                            height: 150,
+                            errorBuilder: (context, error, stackTrace) {
+                              return const Text('Image failed to load');
+                            },
+                          ),
 
-                        Image.asset(
-                          'images/inspo-insta-post-2.png',
-                          width: 105,
-                          height: 150,
-                          errorBuilder: (context, error, stackTrace) {
-                            return const Text('Image failed to load');
-                          },
-                        ),
+                          Image.asset(
+                            'images/inspo-insta-post-2.png',
+                            width: 105,
+                            height: 150,
+                            errorBuilder: (context, error, stackTrace) {
+                              return const Text('Image failed to load');
+                            },
+                          ),
 
-                        Image.asset(
-                          'images/inspo-insta-post-3.png',
-                          width: 105,
-                          height: 150,
-                          errorBuilder: (context, error, stackTrace) {
-                            return const Text('Image failed to load');
-                          },
-                        ),
-                      ],
+                          Image.asset(
+                            'images/inspo-insta-post-3.png',
+                            width: 105,
+                            height: 150,
+                            errorBuilder: (context, error, stackTrace) {
+                              return const Text('Image failed to load');
+                            },
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ],
@@ -128,38 +134,41 @@ class InspirePage extends StatelessWidget {
                 ),
 
                 //the posts
-                SizedBox(
-                  height: 180,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Image.asset(
-                        'images/inspo-tiktok-post-1.png',
-                        width: 105,
-                        height: 150,
-                        errorBuilder: (context, error, stackTrace) {
-                          return const Text('Image failed to load');
-                        },
-                      ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 10),
+                  child: SizedBox(
+                    height: 195,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Image.asset(
+                          'images/inspo-tiktok-post-1.png',
+                          width: 115,
+                          height: 160,
+                          errorBuilder: (context, error, stackTrace) {
+                            return const Text('Image failed to load');
+                          },
+                        ),
 
-                      Image.asset(
-                        'images/inspo-tiktok-post-2.png',
-                        width: 105,
-                        height: 150,
-                        errorBuilder: (context, error, stackTrace) {
-                          return const Text('Image failed to load');
-                        },
-                      ),
+                        Image.asset(
+                          'images/inspo-tiktok-post-2.png',
+                          width: 115,
+                          height: 160,
+                          errorBuilder: (context, error, stackTrace) {
+                            return const Text('Image failed to load');
+                          },
+                        ),
 
-                      Image.asset(
-                        'images/inspo-tiktok-post-3.png',
-                        width: 105,
-                        height: 150,
-                        errorBuilder: (context, error, stackTrace) {
-                          return const Text('Image failed to load');
-                        },
-                      ),
-                    ],
+                        Image.asset(
+                          'images/inspo-tiktok-post-3.png',
+                          width: 115,
+                          height: 160,
+                          errorBuilder: (context, error, stackTrace) {
+                            return const Text('Image failed to load');
+                          },
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ],

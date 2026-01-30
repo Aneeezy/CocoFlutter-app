@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:my_app/pages/learning_page.dart';
+import 'package:my_app/pages/track_performance_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -14,8 +16,10 @@ class _HomePageState extends State<HomePage> {
     const Center(child: Text("Home Page")),
     const Center(child: Text("Schedule Page")),
     const Center(child: Text("Creation Page")),
-    const Center(child: Text("Learning Page")),
-    const Center(child: Text("Stats Page")),
+    // const Center(child: Text("Learning Page")),
+    // const Center(child: Text("Stats Page")),
+    LearningPage(),
+    TrackPerformancePage(),
   ];
 
   @override

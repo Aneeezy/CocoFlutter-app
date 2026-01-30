@@ -102,7 +102,7 @@ class LearningPage extends StatelessWidget {
 
                 //tutorial box
                 SizedBox(
-                  height: 200,
+                  height: 195,
                   width: double.infinity,
                   child: Stack(
                     children: [

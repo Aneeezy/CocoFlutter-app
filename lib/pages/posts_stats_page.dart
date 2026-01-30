@@ -18,7 +18,7 @@ class PostsStatsPage extends StatelessWidget {
         margin: const EdgeInsets.only(left: 20, right: 20),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          spacing: 17,
+          spacing: 25,
           children: [
             //headline
             Text(
@@ -140,7 +140,7 @@ class PostsStatsPage extends StatelessWidget {
 
             //headline
             Container(
-              margin: EdgeInsets.only(top: 15),
+              margin: EdgeInsets.only(top: 20),
               child: Text(
                 'Tiktok\nPosts stats',
                 style: GoogleFonts.poppins(
@@ -156,7 +156,7 @@ class PostsStatsPage extends StatelessWidget {
 
             //tiktok posts area
             SizedBox(
-              height: 150,
+              height: 155,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [

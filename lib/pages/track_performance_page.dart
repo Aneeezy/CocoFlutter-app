@@ -34,7 +34,7 @@ class TrackPerformancePage extends StatelessWidget {
               //green box
               Container(
                 height: 160,
-                margin: EdgeInsets.symmetric(horizontal: 20, vertical: 30),
+                margin: EdgeInsets.symmetric(horizontal: 20, vertical: 25),
                 decoration: BoxDecoration(
                   color: const Color.fromRGBO(139, 179, 136, 1),
                   borderRadius: BorderRadius.circular(10),
@@ -51,7 +51,7 @@ class TrackPerformancePage extends StatelessWidget {
 
               //box title
               Positioned(
-                top: 45,
+                top: 40,
                 left: 30,
                 child: Text(
                   'Followers and\nClients statistics',
@@ -68,7 +68,7 @@ class TrackPerformancePage extends StatelessWidget {
 
               //box description
               Positioned(
-                top: 110,
+                top: 105,
                 left: 30,
                 child: SizedBox(
                   width: 220,
@@ -91,7 +91,7 @@ class TrackPerformancePage extends StatelessWidget {
 
               //arrow icon button
               Positioned(
-                top: 135,
+                top: 130,
                 left: 315,
                 child: IconButton(
                   onPressed: () {
@@ -117,7 +117,7 @@ class TrackPerformancePage extends StatelessWidget {
                 margin: EdgeInsets.only(
                   left: 20,
                   right: 20,
-                  bottom: 30,
+                  bottom: 25,
                   top: 10,
                 ),
                 decoration: BoxDecoration(

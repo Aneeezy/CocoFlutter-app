@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Coco App',
 
-      home: TrackPerformancePage(),
+      home: HomePage(),
 
       routes: {
         '/homepage': (context) => HomePage(),
