@@ -62,9 +62,24 @@ flutter:
   assets:
     - images/marketing-term.png
     - images/shape-picture.png
-    - images/yt-vid.png
     - images/new-yt-vid.png
     - images/double-arrow-icon.png
+    - images/inspo-insta-post-1.png
+    - images/inspo-insta-post-2.png
+    - images/inspo-insta-post-3.png
+    - images/inspo-tiktok-post-1.png
+    - images/inspo-tiktok-post-2.png
+    - images/inspo-tiktok-post-3.png
+    - images/insta-post-1.png
+    - images/insta-post-2.png
+    - images/insta-post-3.png
+    - images/insta-post-4.png
+    - images/insta-post-5.png
+    - images/insta-post-6.png
+    - images/tiktok-post-1.png
+    - images/tiktok-post-2.png
+    - images/tiktok-post-3.png
+    - images/back-arrow.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

@@ -12,7 +12,7 @@ class TrackPerformancePage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          //headline marketing term of the day
+          //headline
           Container(
             margin: const EdgeInsets.only(top: 100, left: 20),
             child: Text(
@@ -94,7 +94,10 @@ class TrackPerformancePage extends StatelessWidget {
                 top: 135,
                 left: 315,
                 child: IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    //print("you pressed me");
+                    Navigator.pushNamed(context, '/followersclientsstatspage');
+                  },
                   icon: Image.asset(
                     'images/double-arrow-icon.png',
                     width: 30,
@@ -111,7 +114,6 @@ class TrackPerformancePage extends StatelessWidget {
               //green box
               Container(
                 height: 160,
-                //margin: EdgeInsets.symmetric(horizontal: 20, vertical: 30),
                 margin: EdgeInsets.only(
                   left: 20,
                   right: 20,
@@ -177,7 +179,9 @@ class TrackPerformancePage extends StatelessWidget {
                 top: 115,
                 left: 315,
                 child: IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/postsstatspage');
+                  },
                   icon: Image.asset(
                     'images/double-arrow-icon.png',
                     width: 30,
@@ -194,7 +198,6 @@ class TrackPerformancePage extends StatelessWidget {
               //green box
               Container(
                 height: 160,
-                //margin: EdgeInsets.symmetric(horizontal: 20, vertical: 30),
                 margin: EdgeInsets.only(left: 20, right: 20, top: 10),
                 decoration: BoxDecoration(
                   color: const Color.fromRGBO(139, 179, 136, 1),
@@ -255,7 +258,9 @@ class TrackPerformancePage extends StatelessWidget {
                 top: 115,
                 left: 315,
                 child: IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/inspirepage');
+                  },
                   icon: Image.asset(
                     'images/double-arrow-icon.png',
                     width: 30,
