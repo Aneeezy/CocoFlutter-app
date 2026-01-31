@@ -22,10 +22,20 @@ class _HomePageState extends State<HomePage> {
     TrackPerformancePage(),
   ];
 
+  //list of background colors
+  final List<Color> _navColors = [
+    const Color(0xFFDCEEDB), // Home
+    const Color(0xFF8BB388), // Schedule
+    const Color(0xFFDCEEDB), // Creation
+    const Color(0xFF8BB388), // Learning
+    const Color(0xFFDCEEDB), // Stats
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: _pages[_currentIndex],
+
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,
         onTap: (index) {
@@ -34,25 +44,74 @@ class _HomePageState extends State<HomePage> {
           });
         },
         type: BottomNavigationBarType.fixed,
-        items: const [
+
+        backgroundColor: _navColors[_currentIndex],
+
+        //dont show labels
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
+        selectedFontSize: 0,
+        unselectedFontSize: 0,
+
+        items: [
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
+            //icon: Icon(Icons.home),
+            icon: Image.asset(
+              'images/home-icon.png',
+              width: 25,
+              height: 25,
+              errorBuilder: (context, error, stackTrace) {
+                return const Text('Image failed to load');
+              },
+            ),
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.schedule),
+            //icon: Icon(Icons.schedule),
+            icon: Image.asset(
+              'images/schedule-icon.png',
+              width: 25,
+              height: 25,
+              errorBuilder: (context, error, stackTrace) {
+                return const Text('Image failed to load');
+              },
+            ),
             label: 'Schedule',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.add),
+            //icon: Icon(Icons.add),
+            icon: Image.asset(
+              'images/pink-create-icon.png',
+              width: 40,
+              height: 40,
+              errorBuilder: (context, error, stackTrace) {
+                return const Text('Image failed to load');
+              },
+            ),
             label: 'Create',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.school),
+            //icon: Icon(Icons.school),
+            icon: Image.asset(
+              'images/learn-icon.png',
+              width: 28,
+              height: 28,
+              errorBuilder: (context, error, stackTrace) {
+                return const Text('Image failed to load');
+              },
+            ),
             label: 'Learning',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.bar_chart),
+            //icon: Icon(Icons.bar_chart),
+            icon: Image.asset(
+              'images/stats-icon.png',
+              width: 25,
+              height: 25,
+              errorBuilder: (context, error, stackTrace) {
+                return const Text('Image failed to load');
+              },
+            ),
             label: 'Stats',
           ),
         ],

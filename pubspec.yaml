@@ -80,6 +80,11 @@ flutter:
     - images/tiktok-post-2.png
     - images/tiktok-post-3.png
     - images/back-arrow.png
+    - images/home-icon.png
+    - images/learn-icon.png
+    - images/schedule-icon.png
+    - images/stats-icon.png
+    - images/pink-create-icon.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
